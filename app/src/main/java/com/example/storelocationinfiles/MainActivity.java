@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
         String longitude = String.valueOf(location.getLongitude());
         Toast.makeText(MainActivity.this, latitude +" "+ longitude, Toast.LENGTH_LONG).show();
         Log.d("Clima", latitude +" 105 "+ longitude);
-        /*AlertDialog adl = new AlertDialog.Builder(MainActivity.this)
+        AlertDialog adl = new AlertDialog.Builder(MainActivity.this)
                 .setIcon(R.drawable.ic_baseline_save_24)
                 .setTitle("Confirmation")
                 .setMessage("Save Location:\nLatitude: "+latitude+"\nLongitude: "+longitude)
@@ -157,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }).create();
         adl.show();
-        */
         saveLocationInHardDrive(latitude, longitude);
 
     }
